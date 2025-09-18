@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ana Carolina Leão</title>
+    <style>
+        :root {
+            --cor-principal: #2b0033; /* Roxo profundo */
+            --cor-secundaria: #e6e6e6; /* Cinza claro */
+            --cor-destaque: #9b59b6;   /* Roxo vibrante */
+            --cor-texto: #2b2b2b;      /* Texto cinza escuro */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background-color: var(--cor-secundaria);
+            color: var(--cor-texto);
+        }
+
+        header, footer {
+            background-color: var(--cor-principal);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 120px 20px;
+            max-width: 1000px;
+            margin: auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: var(--cor-principal);
+            border-bottom: 2px solid var(--cor-destaque);
+            margin-bottom: 20px;
+        }
+
+        /* estilo ajustado para a foto  */
+        .foto-arredondada {
+            width: 150px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 40px;
+            float: left;
+            margin-right: 20px;
+            margin-bottom: 20px;
+        }
+
+        .favoritos img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin: 10px;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .favoritos img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        .favoritos-secao {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Centralizar */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #999;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Alinhar os vídeos */
+        .videos-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        iframe {
+            width: 300px;
+            height: 170px;
+            border: none;
+        }
+
+        .contato form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+        }
+
+        .contato input, .contato textarea {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+        }
+
+        .contato button {
+            padding: 10px;
+            background-color: var(--cor-destaque);
+            border: none;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        footer p {
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Meu Site Pessoal</h1>
+    <nav>
+        <a href="#sobre">Sobre Mim</a>
+        <a href="#favoritos">Favoritos</a>
+        <a href="#esportes">Outros</a>
+        <a href="#links">Links</a>
+        <a href="#horarios">Horários</a>
+        <a href="#videos">Vídeos</a>
+        <a href="#contato">Contato</a>
+    </nav>
+</header>
+
+<section id="sobre" class="sobre">
+    <h2>Sobre Mim</h2>
+    <img src="foto.jpg" alt="Minha foto" class="foto-arredondada" />
+    <p>Meu nome é Ana Carolina Leão Humanski, tenho 17 anos e moro em Serra dos Dourados. Gosto de aprender coisas novas, especialmente nas áreas de tecnologia, neurociência, filosofia e desenvolvimento pessoal. </p>
+    
+</section>
+
+<section id="favoritos" class="favoritos">
+    <h2>Meus Itens Favoritos</h2>
+
+    <h3> Comidas favoritas</h3>
+    <div class="favoritos-secao">
+        <img src="pizza.webp" alt="Pizza" />
+        <img src="Strogonrfffff. Já pediu o seu_ Se não, cuida🔥😋" alt="Strogonoff" />
+        <img src="sushi.webp" alt="Sushi" />
+    </div>
+
+    <h3> Doces favoritos</h3>
+    <div class="favoritos-secao">
+        <img src="Acai Bowl.jpg" alt="Açai" />
+        <img src="Sorvete.webp" alt="Sorvete" />
+        <img src="pave.webp" alt="pave" />
+    </div>
+
+    <h3> Livros favoritos</h3>
+    <div class="favoritos-secao">
+        <img src="Mindset_ A nova psicologia do sucesso.jpg" alt="Mindset" />
+        <img src="Noites Brancas – Fiódor Dostoiévski.jpg" alt="Noites Brancas" />
+        <img src="Rápido e devagar.jpg" alt="Rapido e Devagar" />
+    </div>
+</section>
+
+<section id="esportes">
+    <h2>Outros Favoritos</h2>
+
+    <h3>Esportes favoritos</h3>
+    <ul>
+        <li>Vôlei</li>
+        <li>Trilha</li>
+    </ul>
+
+    <h3> Séries/Filmes favoritos</h3>
+    <ul>
+        <li>Sopernatural</li>
+        <li>Orgulho e Peconceito</li>
+        <li>A Noiva Cadaver</li>
+    </ul>
+</section>
+
+<section id="links">
+    <h2> Links Interessantes de Tecnologia</h2>
+    <ul>
+        <li><a href="https://www.github.com" target="_blank">GitHub</a></li>
+        <li><a href="https://www.w3schools.com" target="_blank">W3Schools</a></li>
+        <li><a href="https://developer.mozilla.org/pt-BR/" target="_blank">MDN Web Docs</a></li>
+        <li><a href="https://www.stackoverflow.com" target="_blank">Stack Overflow</a></li>
+    </ul>
+</section>
+
+<section id="horarios">
+    <h3 align="center">MEUS HORÁRIOS</h3><br>
+          <table border="3" align="center">
+             <tr>
+                <td align="center"><b>DISCIPLINA</b></td>
+                <td align="center"><b>PROFESSOR</b></td>
+                <td align="center"><b>CARGA HORÁRIA</b></td>
+                <td align="center"><b>DIAS DE AULA</b></td>
+             </tr>
+             <tr>
+                <td align="center">Biologia II</td>
+                <td align="center">Alex Souza</td>
+                <td align="center">67</td>
+                <td align="center">Quarta-Feira</td>
+             </tr>
+             <tr>
+                <td align="center">Educação Física II</td>
+                <td align="center">Nelma Araujo</td>
+                <td align="center">67</td>
+                <td align="center">Quinta-Feira</td>
+             </tr>
+             <tr>
+                <td align="center">Filosofia III</td>
+                <td align="center">Alan Padilha</td>
+                <td align="center">67</td>
+                <td align="center">Quarta-Feira</td>
+             </tr>
+             <tr>
+                <td align="center">Física I</td>
+                <td align="center">Otávio Sakai</td>
+                <td align="center">100</td>
+                <td align="center">Terça e Quarta-Feira</td>
+             </tr>
+             <tr>
+                <td align="center">Geografia I</td>
+                <td align="center">Ana Paula Alves</td>
+                <td align="center">100</td>
+                <td align="center">Segunda e Quarta-Feira</td>
+             </tr>
+             <tr>
+                <td align="center">Linguagem de Programção III</td>
+                <td align="center">Everton Baro</td>
+                <td align="center">100</td>
+                <td align="center">Quinta-Feira</td>
+             </tr>
+             <tr>
+                <td align="center">Língua Inglesa I</td>
+                <td align="center">Marta Marson</td>
+                <td align="center">67</td>
+                <td align="center">Terça-Feira</td>
+             </tr>
+             <tr>
+                <td align="center">Língua Portuguesa III</td>
+                <td align="center">Paulo Gaiotto</td>
+                <td align="center">67</td>
+                <td align="center">Segunda-Feira</td>
+             </tr>
+             <tr>
+                <td align="center">Matemática III</td>
+                <td align="center">Alex Moriya</td>
+                <td align="center">100</td>
+                <td align="center">Segunda e Terça-Feira</td>
+             </tr>
+             <tr>
+                <td align="center">Rede de Computadores</td>
+                <td align="center">Klenilmar Dias</td>
+                <td align="center">67</td>
+                <td align="center">Sexta-Feira</td>
+             </tr>
+             <tr>
+                <td align="center">Sociologia III</td>
+                <td align="center">Rafel Egídio</td>
+                <td align="center">34</td>
+                <td align="center">Terça-Feira</td>
+             </tr>
+             <tr>
+                <td align="center">Tecnologias para Web I</td>
+                <td align="center">Marcelo Borth</td>
+                <td align="center">100</td>
+                <td align="center">Sexta-Feira</td>
+             </tr>
+          </table><br><br>
+</section>
+
+<section id="videos">
+    <h2> Vídeos Favoritos</h2>
+    <div class="videos-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/scWI-ykd94w?si=4oxqtI5Gbaasra71" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/RwT-j75J6Mk?si=4CBd7axPDvglHg-Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/EalTGGfKGJQ?si=3pkGMkfino0D3aZ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+</section>
+
+<section id="contato" class="contato">
+    <h2> Contato</h2>
+    <form action="mailto:seuemail@example.com" method="post" enctype="text/plain">
+        <input type="text" name="nome" placeholder="Ana Carolina Leão" required>
+        <input type="email" name="email" placeholder="analeaohumanski@gmail.com" required>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; Ana Carolina Leão 2025 </p>
+</footer>
+
+</body>
+</html>
+
